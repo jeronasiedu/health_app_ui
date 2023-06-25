@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
             const Text("Hi, Jane"),
             Text(
               "How are you feeling today?",
-              style: Theme.of(context).textTheme.caption,
+              style: Theme.of(context).textTheme.bodySmall,
             ),
           ],
         ),
@@ -40,14 +40,14 @@ class HomePage extends StatelessWidget {
           const SizedBox(height: 20),
           Text(
             "Health Needs",
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
           const SizedBox(height: 15),
           const HealthNeeds(),
           const SizedBox(height: 25),
           Text(
             "Nearby Doctors",
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
           const SizedBox(height: 15),
           const NearbyDoctors(),

@@ -42,7 +42,7 @@ class UpcomingCard extends StatelessWidget {
               const SizedBox(height: 5),
               Text(
                 "Dental Specialist",
-                style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                       color: Colors.white70,
                     ),
               ),
@@ -55,8 +55,8 @@ class UpcomingCard extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Colors.white10,
                     borderRadius: BorderRadius.circular(10)),
-                child: Row(
-                  children: const [
+                child: const Row(
+                  children: [
                     Icon(
                       Ionicons.calendar_outline,
                       size: 18,

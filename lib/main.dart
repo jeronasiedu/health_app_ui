@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(DevicePreview(
-    enabled: !kReleaseMode,
+    enabled: false,
     builder: (context) => const MyApp(),
   ));
 }
@@ -18,7 +18,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      useInheritedMediaQuery: true,
       builder: DevicePreview.appBuilder,
       locale: DevicePreview.locale(context),
       title: 'health app',
